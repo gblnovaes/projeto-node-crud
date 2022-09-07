@@ -1,0 +1,13 @@
+const mongoose = require('mongoose')
+
+
+const schema = mongoose.Schema({
+    name: String,
+    age: Number,
+    email: String,
+    password: String
+})
+
+const Model = mongoose.model('customers', schema)
+
+modules.exports = Model
