@@ -3,26 +3,34 @@
 <%- include('partials/head.ejs') %>
 
     <body>
-        <%= title  %>
+        <div class="container">
+            <h1>
+                <%= title  %>
+            </h1>
 
             <form action="/register/add" method="POST">
-                <div>
-                    <label for="">Nome:</label>
-                    <input type="text" name="name" placeholder="Digite seu nome">
+                <div class="form-box">
+                    <div>
+                        <label for="">Nome:</label>
+                        <input type="text" name="name" placeholder="Digite seu nome">
+                    </div>
+                    <div>
+                        <label for="">Idade</label>
+                        <input type="text" name="age" id="" placeholder="Digite sua idade">
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="text" name="password" id="" placeholder="Digite sua Senha">
+                    </div>
+
                 </div>
-                <div>
-                    <label for="">Idade</label>
-                    <input type="text" name="age" id="" placeholder="Digite sua idade">
-                </div>
-                <div>
-                    <label for="">Password</label>
-                    <input type="text" name="password" id="" placeholder="Digite sua Senha">
-                </div>
+
                 <button type="submit">Cadastrar</button>
             </form>
+        </div>
 
 
-            <%- include('partials/foot.ejs') %>
+        <%- include('partials/foot.ejs') %>
     </body>
 
 </html>
